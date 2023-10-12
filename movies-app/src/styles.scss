@@ -5,7 +5,7 @@
 //
 //for font
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
 @import '~primeflex/primeflex.css'; //for grid system
 
 body {
@@ -18,4 +18,25 @@ body {
 a {
   text-decoration: none;
   color: $white;
+}
+
+.app-icon {
+  //google font saytindan hazir css
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+.container {
+  //primeflexden gelen grid system-in default marginlerini sifirlamaq uchun. -0.5rem idi her biri
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
