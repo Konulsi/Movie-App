@@ -11,5 +11,3 @@ export class ItemComponent {
 
   imagesSizes = IMAGES_SIZES;
 }
-
-//9un 10cusuna baxdim
