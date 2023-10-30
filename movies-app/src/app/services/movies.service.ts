@@ -90,14 +90,20 @@ export class MoviesService {
       );
   }
 
-  getTvs(type: string = 'latest', count: number = 12) {
-    //pipe hansisa datalari filterleye bilmek uchun veya mueyyen cherte uygun getire bilmek ist edilir
-    return this.http.get<TvDto>(`${this.baseUrl}/movie/${type}?api_key=${this.apiKey}`).pipe(
-      switchMap((res) => {
-        return of(res.results.slice(0, count));
-      })
-    );
-  }
-}
+  // getTvs(type: string = 'latest', count: number = 12) {
+  //   //pipe hansisa datalari filterleye bilmek uchun veya mueyyen cherte uygun getire bilmek ist edilir
+  //   return this.http.get<TvDto>(`${this.baseUrl}/movie/${type}?api_key=${this.apiKey}`).pipe(
+  //     switchMap((res) => {
+  //       return of(res.results.slice(0, count));
+  //     })
+  //   );
+  // }
 
-//12ci qaldi
+  // getTvsGenres() {
+  //   return this.http.get<GenresDto>(`${this.baseUrl}/genre/tv/list?api_key=${this.apiKey}`).pipe(
+  //     switchMap((res) => {
+  //       return of(res.genres);
+  //     })
+  //   );
+  // }
+}

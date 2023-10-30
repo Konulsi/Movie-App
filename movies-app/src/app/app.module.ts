@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -10,8 +9,6 @@ import { MoviesComponent } from './pages/movies/movies.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SliderComponent } from './components/slider/slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ItemsBannerComponent } from './components/items-banner/items-banner.component';
-import { ItemComponent } from './components/item/item.component';
 import { PaginatorModule } from 'primeng/paginator';
 import { TabViewModule } from 'primeng/tabview';
 import { MovieComponent } from './pages/movie/movie.component';
@@ -20,6 +17,12 @@ import { ImageModule } from 'primeng/image';
 import { CarouselModule } from 'primeng/carousel';
 import { GenresComponent } from './pages/genres/genres.component';
 import { InputTextModule } from 'primeng/inputtext';
+import { TvshowComponent } from './pages/tvshow/tvshow.component';
+import { TvShowsComponent } from './pages/tv-shows/tv-shows.component';
+import { TvitemComponent } from './components/tvitem/tvitem.component';
+import { TvitemsBannerComponent } from './components/tvitems-banner/tvitems-banner.component';
+import { MovieItemsBannerComponent } from './components/movie-items-banner/movie-items-banner.component';
+import { MovieItemComponent } from './components/movie-item/movie-item.component';
 
 @NgModule({
   declarations: [
@@ -29,11 +32,15 @@ import { InputTextModule } from 'primeng/inputtext';
     HomeComponent,
     MoviesComponent,
     SliderComponent,
-    ItemsBannerComponent,
-    ItemComponent,
+    MovieItemsBannerComponent,
+    MovieItemComponent,
     MovieComponent,
     VideoEmbedComponent,
-    GenresComponent
+    GenresComponent,
+    TvshowComponent,
+    TvShowsComponent,
+    TvitemComponent,
+    TvitemsBannerComponent
   ],
   imports: [
     BrowserModule,

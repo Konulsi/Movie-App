@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Movie } from '../../models/movie';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { IMAGES_SIZES } from '../../constants/images-sizes';
+import { TvShow } from 'src/app/models/TvModel';
 @Component({
   selector: 'slider',
   templateUrl: './slider.component.html',
@@ -9,7 +10,7 @@ import { IMAGES_SIZES } from '../../constants/images-sizes';
   animations: [trigger('slideFade', [state('void', style({ opacity: 0 })), transition('void <=> *', [animate('1s')])])]
 })
 export class SliderComponent implements OnInit {
-  @Input() items: Movie[] = [];
+  @Input() items: any;
   @Input() isBanner: boolean = false;
 
   currentSlideIndex: number = 0;

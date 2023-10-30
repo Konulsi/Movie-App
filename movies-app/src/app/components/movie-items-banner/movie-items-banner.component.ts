@@ -3,10 +3,10 @@ import { Movie } from 'src/app/models/movie';
 
 @Component({
   selector: 'items-banner',
-  templateUrl: './items-banner.component.html',
-  styleUrls: ['./items-banner.component.scss']
+  templateUrl: './movie-items-banner.component.html',
+  styleUrls: ['./movie-items-banner.component.scss']
 })
-export class ItemsBannerComponent {
+export class MovieItemsBannerComponent {
   @Input() items: Movie[] = [];
   @Input() title: string = '';
 }
